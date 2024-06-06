@@ -9,13 +9,13 @@ export default function Home() {
 					component="h1"
 					gutterBottom
 				>
-					Imagine
+					Contact
 				</Typography>
 				<Typography
 					variant="h5"
 					component="p"
 				>
-					this is trash rn but maybe it won't be later?
+					Showcasing my projects and skills
 				</Typography>
 			</Box>
 
@@ -28,7 +28,7 @@ export default function Home() {
 					component="h2"
 					gutterBottom
 				>
-					Projects? Contact? Not sure what to put here yet.
+					Projects
 				</Typography>
 				<Grid
 					container
