@@ -15,7 +15,7 @@ export default function Home() {
 					variant="h5"
 					component="p"
 				>
-					this is trash rn but maybe it won't be later?
+					this is trash rn but maybe it won&apos;t be later?
 				</Typography>
 			</Box>
 
