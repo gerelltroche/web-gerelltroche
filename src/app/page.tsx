@@ -1,89 +1,25 @@
-import { Box, Typography, Grid, Paper } from "@mui/material";
+import styles from "./page.module.css";
+import EmailSignup from "@/components/EmailSignup";
 
 export default function Home() {
 	return (
-		<>
-			<Box sx={{ my: 4 }}>
-				<Typography
-					variant="h2"
-					component="h1"
-					gutterBottom
-				>
-					Imagine
-				</Typography>
-				<Typography
-					variant="h5"
-					component="p"
-				>
-					this is trash rn but maybe it won&apos;t be later?
-				</Typography>
-			</Box>
+		<div className={styles.container}>
+			<section className={styles.hero}>
+				<h1>Full-Stack Engineer & AI Enthusiast</h1>
+				<p>
+					Currently researching how to use LLMs in high-risk domains safely.
+				</p>
+			</section>
 
-			<Box
-				sx={{ my: 4 }}
-				id="projects"
-			>
-				<Typography
-					variant="h4"
-					component="h2"
-					gutterBottom
-				>
-					Projects? Contact? Not sure what to put here yet.
-				</Typography>
-				<Grid
-					container
-					spacing={3}
-				>
-					<Grid
-						item
-						xs={12}
-						sm={6}
-						md={4}
-					>
-						<Paper sx={{ p: 2 }}>
-							<Typography
-								variant="h6"
-								component="h3"
-							>
-								Project 1
-							</Typography>
-							<Typography variant="body1">Description of Project 1</Typography>
-						</Paper>
-					</Grid>
-					<Grid
-						item
-						xs={12}
-						sm={6}
-						md={4}
-					>
-						<Paper sx={{ p: 2 }}>
-							<Typography
-								variant="h6"
-								component="h3"
-							>
-								Project 2
-							</Typography>
-							<Typography variant="body1">Description of Project 2</Typography>
-						</Paper>
-					</Grid>
-					<Grid
-						item
-						xs={12}
-						sm={6}
-						md={4}
-					>
-						<Paper sx={{ p: 2 }}>
-							<Typography
-								variant="h6"
-								component="h3"
-							>
-								Project 3
-							</Typography>
-							<Typography variant="body1">Description of Project 3</Typography>
-						</Paper>
-					</Grid>
-				</Grid>
-			</Box>
-		</>
+			<section className={styles.contact}>
+				<p>Find me on Github</p>
+				<p>Reach out to me</p>
+				<p>
+					I write sometimes, if you'd like to be notified when i post something
+					new:
+				</p>
+				<EmailSignup styles={styles} />
+			</section>
+		</div>
 	);
 }
