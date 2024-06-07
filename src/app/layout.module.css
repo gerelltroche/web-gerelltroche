@@ -3,7 +3,7 @@
 .bodyWrapper {
 	display: flex;
 	flex-direction: column;
-	min-height: 100vh;
+	min-height: 100dvh;
 }
 
 .main {
@@ -14,13 +14,14 @@
 	width: 100%;
 	background-color: var(--background);
 	color: var(--text-secondary);
-	padding: 1rem;
+	padding: 1rem 0;
 	text-align: center;
 }
 
 .nav a {
 	margin: 0 0.25rem;
-	padding: 1rem 1.5rem;
+    height: 100%;
+	padding: 1rem 1rem;
 	text-decoration: none;
 }
 
