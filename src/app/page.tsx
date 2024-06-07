@@ -15,8 +15,8 @@ export default function Home() {
 				<p>Find me on Github</p>
 				<p>Reach out to me</p>
 				<p>
-					I write sometimes, if you'd like to be notified when i post something
-					new:
+					I write sometimes, if you&#39;d like to be notified when i post
+					something new:
 				</p>
 				<EmailSignup styles={styles} />
 			</section>
